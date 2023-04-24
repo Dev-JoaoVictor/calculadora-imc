@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./js/index.js" type="module" defer></script>
+  </head>
+  <body>
+    <div class="alert-error">Digite somente números</div>
+    <div class="container">
+      <main class="card">
+        <form action="">
+          <h1 class="title">Cálculo de IMC</h1>
+          <div class="input-wrapper">
+            <label for="weight">Peso (kg)</label>
+            <input id="weight" type="text" placeholder="60" />
+          </div>
+          <div class="input-wrapper">
+            <label for="height">Altura (cm)</label>
+            <input id="height" type="text" placeholder="165" />
+          </div>
+          <button type="submit">
+            Calcular IMC
+            <img src="assets/arrow.svg" alt="Seta indicando para a direita" />
+          </button>
+        </form>
+      </main>
+    </div>
+    <div class="modal-wrapper">
+      <div class="modal card">
+        <h2 class="title">
+          <button class="close">
+            <img src="assets/close.svg" alt="Imagem para fechar o modal" />
+          </button>
+          <span>Seu IMC é de 28</span>
+        </h2>
+        <div class="tables">
+          <table class="table imc">
+            <thead>
+              <tr>
+                <th>IMC</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Menor que 18,5</td>
+              </tr>
+              <tr>
+                <td>18,6 - 24,9</td>
+              </tr>
+              <tr>
+                <td>25 - 29,9</td>
+              </tr>
+              <tr>
+                <td>30 - 34,9</td>
+              </tr>
+              <tr>
+                <td>35 - 39,9</td>
+              </tr>
+              <tr>
+                <td>Acima de 40</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table class">
+            <thead>
+              <tr>
+                <th>Classificação</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Abaixo do peso</td>
+              </tr>
+              <tr>
+                <td>Peso ideal</td>
+              </tr>
+              <tr>
+                <td>Sobrepeso</td>
+              </tr>
+              <tr>
+                <td>Obesidade Grau I</td>
+              </tr>
+              <tr>
+                <td>Obesidade Grau II</td>
+              </tr>
+              <tr>
+                <td>Obesidade Grau III ( Morbidá )</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
